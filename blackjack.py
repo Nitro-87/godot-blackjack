@@ -135,6 +135,11 @@ while True:
         print("You've lost all your money")
         break
     else:
-        play = input("Would you like to play again? (y/n)\n")
-        if play != "y": 
+        while True:
+            play = input("Would you like to play again? (y/n)\n")
+            if play == "y" or play == "n": 
+                break
+            else:
+                print("Invalid input")
+        if play == "n":
             break
